@@ -27,6 +27,12 @@ class _SliderScreenState extends State<SliderScreen> {
             slider = value;
             setState(() {});
           },
+        ),
+        Image(
+          image: NetworkImage(
+              'https://eltallerdehector.com/wp-content/uploads/2021/08/Stitch-png-sin-Fondo.png'),
+          fit: BoxFit.contain,
+          width: slider,
         )
       ]),
     );
