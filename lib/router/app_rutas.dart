@@ -41,6 +41,11 @@ class AppRutas {
         nombre: 'Inputs',
         pantalla: const InputsScreen(),
         icono: Icons.format_list_bulleted_rounded),
+    MenuOpciones(
+        ruta: 'slider',
+        nombre: 'Sleider',
+        pantalla: const SliderScreen(),
+        icono: Icons.swipe_left_rounded),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

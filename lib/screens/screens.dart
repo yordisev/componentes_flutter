@@ -1,3 +1,4 @@
+export 'package:componentes/screens/slider_screen.dart';
 export 'package:componentes/screens/inputs_screen.dart';
 export 'package:componentes/screens/animacion_screen.dart';
 export 'package:componentes/screens/inicio_screen.dart';
