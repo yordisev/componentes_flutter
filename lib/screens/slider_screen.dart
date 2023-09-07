@@ -16,25 +16,30 @@ class _SliderScreenState extends State<SliderScreen> {
       appBar: AppBar(
         title: const Text('Slider'),
       ),
-      body: Column(children: [
-        Slider(
-          activeColor: AppTema.primary,
-          min: 50,
-          max: 400,
-          divisions: 10,
-          value: slider,
-          onChanged: (value) {
-            slider = value;
-            setState(() {});
-          },
-        ),
-        Image(
-          image: NetworkImage(
-              'https://eltallerdehector.com/wp-content/uploads/2021/08/Stitch-png-sin-Fondo.png'),
-          fit: BoxFit.contain,
-          width: slider,
-        )
-      ]),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          Slider(
+            activeColor: AppTema.primary,
+            min: 50,
+            max: 400,
+            divisions: 10,
+            value: slider,
+            onChanged: (value) {
+              slider = value;
+              setState(() {});
+            },
+          ),
+          Image(
+            image: const NetworkImage(
+                'https://eltallerdehector.com/wp-content/uploads/2021/08/Stitch-png-sin-Fondo.png'),
+            fit: BoxFit.contain,
+            width: slider,
+          ),
+          const SizedBox(
+            height: 100,
+          )
+        ]),
+      ),
     );
   }
 }
