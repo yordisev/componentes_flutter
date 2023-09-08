@@ -1,3 +1,4 @@
+export 'package:componentes/screens/listabuilder.dart';
 export 'package:componentes/screens/slider_screen.dart';
 export 'package:componentes/screens/inputs_screen.dart';
 export 'package:componentes/screens/animacion_screen.dart';

@@ -43,9 +43,14 @@ class AppRutas {
         icono: Icons.format_list_bulleted_rounded),
     MenuOpciones(
         ruta: 'slider',
-        nombre: 'Sleider',
+        nombre: 'Slider',
         pantalla: const SliderScreen(),
         icono: Icons.swipe_left_rounded),
+    MenuOpciones(
+        ruta: 'listabuilder',
+        nombre: 'Lista Builder Pull Refresh',
+        pantalla: const ListabuilderScreen(),
+        icono: Icons.list),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
